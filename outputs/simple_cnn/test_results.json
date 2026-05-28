@@ -1,0 +1,184 @@
+{
+  "label_mapping": {
+    "REAL": 0,
+    "nature": 0,
+    "FAKE": 1,
+    "ai": 1
+  },
+  "best_checkpoint": "outputs\\simple_cnn\\best_model.pt",
+  "best_epoch": 8,
+  "test": {
+    "loss": 0.10113974949121475,
+    "accuracy": 0.96065,
+    "precision": 0.9513079259331831,
+    "recall": 0.971,
+    "f1": 0.9610531004107488,
+    "auroc": 0.99402161
+  },
+  "confusion_matrix_labels": [
+    "REAL_0",
+    "FAKE_1"
+  ],
+  "confusion_matrix": [
+    [
+      9503,
+      497
+    ],
+    [
+      290,
+      9710
+    ]
+  ],
+  "sample_errors": [
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0001 (3).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7594546675682068
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0002 (7).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.9385067820549011
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0007.jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.9138817191123962
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0010.jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6729810237884521
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0011 (8).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6177891492843628
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0012 (8).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5409091114997864
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0013 (10).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.9794567227363586
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0013.jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.9485291838645935
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0017 (10).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6249570846557617
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0019 (9).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7860921621322632
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0022 (9).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6289531588554382
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0022.jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5808221697807312
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0027 (7).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5276232957839966
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0033 (6).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5590980648994446
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0035 (3).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6168240308761597
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0037 (7).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6888085007667542
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0042 (6).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5615357756614685
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0042 (9).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6661410927772522
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0049 (3).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6716907620429993
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0050 (4).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.9808887839317322
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0052 (9).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5301660895347595
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0053 (3).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.987625777721405
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0053.jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7524995803833008
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0055 (6).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7292832136154175
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\CIFAKE\\test\\REAL\\0056 (4).jpg",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.9056986570358276
+    }
+  ]
+}

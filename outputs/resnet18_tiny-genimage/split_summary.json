@@ -1,0 +1,32 @@
+{
+  "train": {
+    "tinygenimage_train": {
+      "real_0": 14000,
+      "fake_1": 14000
+    },
+    "total": {
+      "real_0": 14000,
+      "fake_1": 14000
+    }
+  },
+  "validation": {
+    "tinygenimage_val": {
+      "real_0": 3500,
+      "fake_1": 3500
+    },
+    "total": {
+      "real_0": 3500,
+      "fake_1": 3500
+    }
+  },
+  "test": {
+    "tinygenimage_val": {
+      "real_0": 3500,
+      "fake_1": 3500
+    },
+    "total": {
+      "real_0": 3500,
+      "fake_1": 3500
+    }
+  }
+}

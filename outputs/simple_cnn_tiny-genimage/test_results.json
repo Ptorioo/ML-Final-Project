@@ -1,0 +1,184 @@
+{
+  "label_mapping": {
+    "REAL": 0,
+    "nature": 0,
+    "FAKE": 1,
+    "ai": 1
+  },
+  "best_checkpoint": "outputs\\simple_cnn_tiny-genimage\\best_model.pt",
+  "best_epoch": 9,
+  "test": {
+    "loss": 0.5731755297524589,
+    "accuracy": 0.6984285714285714,
+    "precision": 0.6906395827614603,
+    "recall": 0.7188571428571429,
+    "f1": 0.7044659106817863,
+    "auroc": 0.7698382040816327
+  },
+  "confusion_matrix_labels": [
+    "REAL_0",
+    "FAKE_1"
+  ],
+  "confusion_matrix": [
+    [
+      2373,
+      1127
+    ],
+    [
+      984,
+      2516
+    ]
+  ],
+  "sample_errors": [
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00000198.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5725253820419312
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00000386.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6436818838119507
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00000696.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7715802192687988
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00000948.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.635982096195221
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00001317.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5468682050704956
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00002026.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.55662602186203
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00002205.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5787097215652466
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00002345.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5565893054008484
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00002429.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6529663801193237
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00003184.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5593624711036682
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00003634.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6290627121925354
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00004229.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6612300276756287
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00005873.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7677040100097656
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00007382.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7107443809509277
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00007386.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.502726137638092
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00007546.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.6767042279243469
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00007767.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.718629777431488
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00007911.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7283569574356079
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00008158.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.632635235786438
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00008343.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.886290431022644
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00008707.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7063897252082825
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00008721.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.5131770968437195
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00008885.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7889209985733032
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00009241.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.652239978313446
+    },
+    {
+      "path": "C:\\Users\\USER\\Desktop\\tinygenimage\\imagenet_ai_0419_biggan\\val\\nature\\ILSVRC2012_val_00009344.JPEG",
+      "label": 0,
+      "prediction": 1,
+      "fake_probability": 0.7099123597145081
+    }
+  ]
+}

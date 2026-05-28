@@ -1,0 +1,32 @@
+{
+  "train": {
+    "cifake": {
+      "real_0": 45000,
+      "fake_1": 45000
+    },
+    "total": {
+      "real_0": 45000,
+      "fake_1": 45000
+    }
+  },
+  "validation": {
+    "cifake": {
+      "real_0": 5000,
+      "fake_1": 5000
+    },
+    "total": {
+      "real_0": 5000,
+      "fake_1": 5000
+    }
+  },
+  "test": {
+    "cifake": {
+      "real_0": 10000,
+      "fake_1": 10000
+    },
+    "total": {
+      "real_0": 10000,
+      "fake_1": 10000
+    }
+  }
+}
