@@ -115,3 +115,19 @@ Run a tiny overfit sanity check:
 ```powershell
 python src/train_baseline.py --dataset-root dataset --dataset cifake --tiny-overfit --epochs 20 --batch-size 32
 ```
+
+## Individual Evaluation
+### Evaluate Model with ONE DATASET only
+Examples
+```bash
+python src/evaluation.py --checkpoint outputs/resnet18/best_model.pt --dataset cifake
+```
+
+```bash
+python src/evaluation.py --checkpoint outputs/simple_cnn/best_model.pt --dataset tiny-genimage --tinygenimage-split val
+```
+
+### Combined Test
+```bash
+python src/evaluation.py --checkpoint outputs/resnet18/best_model.pt --dataset combined
+```
