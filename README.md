@@ -71,47 +71,76 @@ python -m pip install -r requirements.txt
 Simple CNN on CIFAKE:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset cifake
+python src/train.py --dataset-root dataset --datasets cifake
 ```
 
 ResNet-18 on CIFAKE:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset cifake --model resnet18 --epochs 10 --batch-size 128
+python src/train.py --dataset-root dataset --datasets cifake --model resnet18 --epochs 10 --batch-size 128
 ```
 
 CIFAKE + TinyGenImage:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset combined --model resnet18 --epochs 10 --batch-size 128
+python src/train.py --dataset-root dataset --datasets cifake tiny-genimage --model resnet18 --epochs 10 --batch-size 128
 ```
 
 TinyGenImage only:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset tiny-genimage --model resnet18 --epochs 10 --batch-size 64 --semantic-size 224 --normalization imagenet
+python src/train.py --dataset-root dataset --datasets tiny-genimage --model resnet18 --epochs 10 --batch-size 64 --semantic-size 224 --normalization imagenet
 ```
 
 TinyGenImage only, filtered to one generator:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset tiny-genimage --generators sdv5 --model resnet18 --epochs 10 --batch-size 64 --semantic-size 224 --normalization imagenet
+python src/train.py --dataset-root dataset --datasets tiny-genimage --generators sdv5 --model resnet18 --epochs 10 --batch-size 64 --semantic-size 224 --normalization imagenet
 ```
 
 Training option names:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset cifake --lr 0.001 --semantic-size 32 --max-train-samples 128 --max-val-samples 64
+python src/train.py --dataset-root dataset --datasets cifake --lr 0.001 --semantic-size 32 --max-train-samples 128 --max-val-samples 64
 ```
 
 Enable light training-only augmentation:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset cifake --augment
+python src/train.py --dataset-root dataset --datasets cifake --augment
 ```
 
 Run a tiny overfit sanity check:
 
 ```powershell
-python src/train_baseline.py --dataset-root dataset --dataset cifake --tiny-overfit --epochs 20 --batch-size 32
+python src/train.py --dataset-root dataset --datasets cifake --tiny-overfit --epochs 20 --batch-size 32
+```
+
+## Individual Evaluation
+### Evaluate Model with ONE DATASET only
+Examples
+```bash
+python src/evaluation.py --checkpoint outputs/resnet18/best_model.pt --dataset cifake
+```
+
+```bash
+python src/evaluation.py --checkpoint outputs/simple_cnn/best_model.pt --dataset tiny-genimage --tinygenimage-split val
+```
+
+### Combined Test
+```bash
+python src/evaluation.py --checkpoint outputs/resnet18/best_model.pt --dataset combined
+```
+
+### Robustness Evaluation
+Run clean evaluation plus JPEG compression, Gaussian blur, down-up resize, and Gaussian noise:
+
+```bash
+python src/evaluation.py --checkpoint outputs/resnet18/best_model.pt --dataset cifake --distortions all --output outputs/resnet18/robustness_cifake.json
+```
+
+Run selected distortions only:
+
+```bash
+python src/evaluation.py --checkpoint outputs/resnet18/best_model.pt --dataset tiny-genimage --tinygenimage-split val --distortions clean jpeg_q70 blur noise
 ```

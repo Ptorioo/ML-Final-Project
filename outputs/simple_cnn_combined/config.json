@@ -1,0 +1,22 @@
+{
+  "model": "simple_cnn",
+  "dataset": "combined",
+  "dataset_root": "dataset",
+  "generators": null,
+  "output_dir": "outputs\\simple_cnn_combined",
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "val_fraction": 0.1,
+  "seed": 42,
+  "num_workers": 2,
+  "semantic_size": 32,
+  "normalization": "cifar10",
+  "augment": false,
+  "max_train_samples": null,
+  "max_val_samples": null,
+  "pretrained": false,
+  "cifar_resnet_stem": true,
+  "device": "cuda"
+}
