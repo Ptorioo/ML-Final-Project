@@ -13,7 +13,7 @@
   "num_workers": 2,
   "semantic_size": 32,
   "normalization": "cifar10",
-  "augment": true,
+  "augment": false,
   "max_train_samples": null,
   "max_val_samples": null,
   "pretrained": false,

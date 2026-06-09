@@ -1,0 +1,1440 @@
+{
+  "checkpoint": "outputs\\resnet18\\best_model.pt",
+  "label_mapping": {
+    "REAL": 0,
+    "nature": 0,
+    "FAKE": 1,
+    "ai": 1
+  },
+  "model": "resnet18",
+  "semantic_size": 32,
+  "normalization": "cifar10",
+  "distortions": [
+    "clean",
+    "jpeg_q90",
+    "jpeg_q70",
+    "jpeg_q50",
+    "jpeg_q30",
+    "blur",
+    "resize",
+    "noise"
+  ],
+  "datasets": {
+    "cifake_test": {
+      "split_summary": {
+        "real_0": 10000,
+        "fake_1": 10000
+      },
+      "distortions": {
+        "clean": {
+          "metrics": {
+            "loss": 0.1104796849489212,
+            "accuracy": 0.9589,
+            "precision": 0.9753470064222084,
+            "recall": 0.9416,
+            "f1": 0.9581764526305078,
+            "auroc": 0.993760895
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9762,
+              238
+            ],
+            [
+              584,
+              9416
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0001 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9716784358024597
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9431639909744263
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0013 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5926188230514526
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0019 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5133536458015442
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0023 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9450446963310242
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8497307300567627
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0030.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8562279343605042
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0047 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7701460719108582
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0053 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7433874607086182
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0055 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.872227132320404
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0056 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8204382658004761
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0060.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9541723132133484
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0061 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.808330774307251
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0065 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9080981016159058
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0067 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9705682992935181
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0068.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.838839054107666
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0075 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9724715948104858
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0076 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8880388736724854
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0084 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6499195098876953
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0087.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9555707573890686
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0088 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5716937780380249
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0088 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9483300447463989
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0090 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5142105221748352
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0090 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9024410247802734
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0094 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5708603858947754
+            }
+          ]
+        },
+        "jpeg_q90": {
+          "metrics": {
+            "loss": 0.11482249071598052,
+            "accuracy": 0.9568,
+            "precision": 0.9714138286893705,
+            "recall": 0.9413,
+            "f1": 0.9561198577958354,
+            "auroc": 0.99297124
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9723,
+              277
+            ],
+            [
+              587,
+              9413
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0001 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.977483868598938
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.952981173992157
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0019 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5143416523933411
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0023 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.936993420124054
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8729658126831055
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0026 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5260534882545471
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0027 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5337705612182617
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0030.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8518058657646179
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0047 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6536847352981567
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0048 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5960173606872559
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0050 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7118303179740906
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0050.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6991304755210876
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0053 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7843553423881531
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0055 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9525415897369385
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0056 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8449410796165466
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0059 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6733582615852356
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0060.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9489112496376038
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0061 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8882810473442078
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0065 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8643025755882263
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0067 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9610224962234497
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0068.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7816960215568542
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0075 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9756125211715698
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0076 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8886779546737671
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0084 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6103543639183044
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0087.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9679439663887024
+            }
+          ]
+        },
+        "jpeg_q70": {
+          "metrics": {
+            "loss": 0.10930008385181426,
+            "accuracy": 0.95985,
+            "precision": 0.9622072570107548,
+            "recall": 0.9573,
+            "f1": 0.9597473557571808,
+            "auroc": 0.992707025
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9624,
+              376
+            ],
+            [
+              427,
+              9573
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0000 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.535311758518219
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0001 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9908040761947632
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9728735685348511
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0003 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7286309599876404
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0012.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7202519178390503
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0013 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6966553926467896
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0015 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.63747239112854
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0022.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6750558614730835
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0023 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.976355254650116
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9426866173744202
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0030.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9048466682434082
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0038 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6735097765922546
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0044 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6710505485534668
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0047 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.864146888256073
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0048 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6479911208152771
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0050 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.757276177406311
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0050.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7471006512641907
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0053 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8388879895210266
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0055 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9746692776679993
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0056 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9178150296211243
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0059 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6948882937431335
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0060.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9697933793067932
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0061 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8964333534240723
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0065 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.70648193359375
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0067 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9645774364471436
+            }
+          ]
+        },
+        "jpeg_q50": {
+          "metrics": {
+            "loss": 0.1719173176765442,
+            "accuracy": 0.9317,
+            "precision": 0.9357085183689947,
+            "recall": 0.9271,
+            "f1": 0.9313843680932289,
+            "auroc": 0.9820959050000001
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9363,
+              637
+            ],
+            [
+              729,
+              9271
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0001 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9920880198478699
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0001 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8726697564125061
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9749715924263
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0003 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8740130066871643
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0004 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6636257767677307
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0007.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7031803131103516
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0012.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.549471378326416
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0015 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.635473906993866
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0018 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7103735208511353
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0019.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9009127020835876
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0022 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7046381831169128
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0022 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8024107813835144
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0022.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9521791934967041
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0023 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8980964422225952
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.971513569355011
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0026 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8449460864067078
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0030.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9908089637756348
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0033 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8042957186698914
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0038 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9031639099121094
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0044 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8854305744171143
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0045 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6415849924087524
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0046 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7595152854919434
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0047 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9551351070404053
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0048 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6277529001235962
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0049 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.514091968536377
+            }
+          ]
+        },
+        "jpeg_q30": {
+          "metrics": {
+            "loss": 0.5532309379816055,
+            "accuracy": 0.8431,
+            "precision": 0.983784545967287,
+            "recall": 0.6977,
+            "f1": 0.8164053358296279,
+            "auroc": 0.9733569400000001
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9885,
+              115
+            ],
+            [
+              3023,
+              6977
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7666040658950806
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0004 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8425649404525757
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0009 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.864681601524353
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0018.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6051046252250671
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0019 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8248906135559082
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6744558215141296
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0060.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6164376735687256
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0065 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9855914115905762
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0067 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8133503198623657
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0075 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.777172327041626
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0114 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6837231516838074
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0122 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7464437484741211
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0125 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5513907074928284
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0131 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.764133095741272
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0137 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6156723499298096
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0138.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8394724130630493
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0161.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7783660888671875
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0164 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8707224726676941
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0168 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9654592275619507
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0183.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5573602318763733
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0186 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5869630575180054
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0193 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8748528361320496
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0202 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9686020612716675
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0207 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9886738657951355
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0218 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6322243213653564
+            }
+          ]
+        },
+        "blur": {
+          "metrics": {
+            "loss": 2.2453864473342895,
+            "accuracy": 0.5597,
+            "precision": 0.9861563517915309,
+            "recall": 0.1211,
+            "f1": 0.21571072319201995,
+            "auroc": 0.81450826
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9983,
+              17
+            ],
+            [
+              8789,
+              1211
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5904141068458557
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0037 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.629574716091156
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0076 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9134881496429443
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0098 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5187280178070068
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0345 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8266629576683044
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0370 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.650017261505127
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0383 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5094466209411621
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0387 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6597983837127686
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0395 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.834510326385498
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0446 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6736282706260681
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0491 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.623168408870697
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0591 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5132243037223816
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0719 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.523959755897522
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0724 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7753047347068787
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0809 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8798303008079529
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0872 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5018053650856018
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0969 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5858045220375061
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (10).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.03517671301960945
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (2).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.0817081481218338
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (3).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.15931662917137146
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (5).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.002389199798926711
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (6).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.20471695065498352
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (7).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.0016513853333890438
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (8).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.013191544450819492
+            },
+            {
+              "path": "dataset\\cifake\\test\\FAKE\\0 (9).jpg",
+              "label": 1,
+              "prediction": 0,
+              "fake_probability": 0.05300533398985863
+            }
+          ]
+        },
+        "resize": {
+          "metrics": {
+            "loss": 0.9822009365081787,
+            "accuracy": 0.6592,
+            "precision": 0.8432514014661492,
+            "recall": 0.3911,
+            "f1": 0.5343626178439678,
+            "auroc": 0.77050191
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9273,
+              727
+            ],
+            [
+              6089,
+              3911
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0001 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5019762516021729
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9655318260192871
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0005 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6049910187721252
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0005 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7360581159591675
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0006 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8317623138427734
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0006 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.90316241979599
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0008 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9084916710853577
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0008 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8205096125602722
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0009 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7880587577819824
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0015 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6663727164268494
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0015 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7410908341407776
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0017 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5876446962356567
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0020 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6327126026153564
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0020 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6611476540565491
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7510573863983154
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0025 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.667370617389679
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0025 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7220015525817871
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0025 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6729760766029358
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0026 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5448906421661377
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0027 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5099449157714844
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0031 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8782199621200562
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0031 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8998934626579285
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0031 (9).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5597190260887146
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0033 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6603315472602844
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0034 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.528758704662323
+            }
+          ]
+        },
+        "noise": {
+          "metrics": {
+            "loss": 0.22419381804466249,
+            "accuracy": 0.90475,
+            "precision": 0.9820173871620816,
+            "recall": 0.8246,
+            "f1": 0.8964505082350384,
+            "auroc": 0.98645881
+          },
+          "confusion_matrix_labels": [
+            "REAL_0",
+            "FAKE_1"
+          ],
+          "confusion_matrix": [
+            [
+              9849,
+              151
+            ],
+            [
+              1754,
+              8246
+            ]
+          ],
+          "sample_errors": [
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0002 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8006106615066528
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0023 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.754528284072876
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0024 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6032159328460693
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0030.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.725760817527771
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0056 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9009699821472168
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0067 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.728722095489502
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0075 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7227556109428406
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0076 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5232307314872742
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0076 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6692409515380859
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0088 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5762229561805725
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0097 (8).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6483237147331238
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0098 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6732248663902283
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0099.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6039307713508606
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0101 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5477054715156555
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0112 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6527034044265747
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0113 (7).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.9531034827232361
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0115 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5898746252059937
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0119 (5).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.8611742258071899
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0122 (6).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5174942016601562
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0125 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7503211498260498
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0133 (4).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.6716465950012207
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0135 (10).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5511570572853088
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0138.jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.7095933556556702
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0139 (3).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.62303227186203
+            },
+            {
+              "path": "dataset\\cifake\\test\\REAL\\0164 (2).jpg",
+              "label": 0,
+              "prediction": 1,
+              "fake_probability": 0.5460829734802246
+            }
+          ]
+        }
+      }
+    }
+  }
+}
